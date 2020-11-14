@@ -16,9 +16,9 @@ type Jugadora struct {
     Id          int       `json:"_id"`
     Nombre      string    `json:"nombre"`
     Genero      string    `json:"genero"`
-    Nacimiento  int       `json:"nacimiento"`
-    Residencia      string    `json:"residencia"`
-    Contratos     []ContratoRef `json:"contratos"`
+    Nacimiento  string       `json:"nacimiento"`
+    Residencia  string    `json:"residencia"`
+    Contratos   []ContratoRef `json:"contratos"`
 }
 
 var items []Jugadora
