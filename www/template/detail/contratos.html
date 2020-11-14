@@ -1,0 +1,43 @@
+<h4 style="margin-top: 15px">{{ title }}</h4>
+<h5>Detalle de contrato</h5>
+<form>
+  <div class="row">
+    <div class="six columns">
+       <label for="idInput">ID</label>
+       <input class="u-full-width" type="text" id="_id" value="{{ _id }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="copyrightInput">Estado</label>
+       <input class="u-full-width" type="text" id="estado" 
+              value="{{ estado }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for="editionInput">Fecha de inicio</label>
+       <input class="u-full-width" type="text" id="p_inicio" 
+              value="{{p_inicio }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="languageInput">Fecha de finalizacion</label>
+       <input class="u-full-width" type="text" id="p_final" 
+              value="{{ p_final }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for=" authorInput">Equipo</label>
+       <a href="/equipoById/?id={{ equipo_id }}">
+         <input class="u-full-width" type="button" id=" equipo" 
+                value="{{ equipo }}" readonly/>
+       </a>
+    </div>
+    <div class="six columns">
+       <label for="languageInput">Jugadora</label>
+       <a href="/jugadoraById/?id={{ jugador_id }}">
+         <input class="u-full-width" type="button" id="jugador" 
+                value="{{ jugador }}" readonly/>
+       </a>
+    </div>
+  </div>
+</form>

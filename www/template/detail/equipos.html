@@ -1,0 +1,35 @@
+<h4 style="margin-top: 15px">{{ nombre }}</h4>
+<h5>Detalle de equipo</h5>
+<form>
+  <div class="row">
+    <div class="six columns">
+       <label for="idInput">ID</label>
+       <input class="u-full-width" type="text" id="_id" value="{{ _id }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="copyrightInput">Estadio</label>
+       <input class="u-full-width" type="text" id="estadio" 
+              value="{{ estadio }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for="editionInput">Cuidad</label>
+       <input class="u-full-width" type="text" id="cuidad" 
+              value="{{ cuidad }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="languageInput">Fundación</label>
+       <input class="u-full-width" type="text" id="fundacion" 
+              value="{{ fundacion }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+       <label for=" authorInput">Contratos</label>
+       <ul>
+		{{#contratos}}
+		  <li><a href="/contratoById/?id={{contrato_id}}">{{title}}</li>
+		{{/contratos}}
+	   </ul>
+  </div>
+</form>

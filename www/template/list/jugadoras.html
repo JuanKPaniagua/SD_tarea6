@@ -1,0 +1,8 @@
+<h3 style="margin-top: 15px">Información de jugadoras</h3>
+Esta sección presenta información sobre las jugadoras registradas
+<p>
+<ul>
+  {{#.}}
+    <li><a href='/jugadoraById/?id={{ _id }}'> {{ nombre }}</a></li>
+  {{/.}}
+</ul>

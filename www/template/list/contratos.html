@@ -1,0 +1,8 @@
+<h3 style="margin-top: 15px">Información de contratos</h3>
+Esta sección presenta información sobre los contratos registrados
+<p>
+<ul>
+  {{#.}}
+    <li><a href='/contratoById/?id={{ _id }}'> {{ title }}</a></li>
+  {{/.}}
+</ul>

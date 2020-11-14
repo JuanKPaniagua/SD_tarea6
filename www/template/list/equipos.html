@@ -1,0 +1,8 @@
+<h3 style="margin-top: 15px">Información de equipos</h3>
+Esta sección presenta información sobre los equipos registrados
+<p>
+<ul>
+  {{#.}}
+    <li><a href='/equipoById/?id={{ _id }}'> {{ nombre }}</a></li>
+  {{/.}}
+</ul>
